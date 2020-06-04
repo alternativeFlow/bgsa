@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>title</title>
     <link rel="stylesheet" href="/assets/css/styles.css">
+    <script src="/assets/js/scripts.js"></script>
   </head>
   <body>
   	<header>
@@ -17,13 +18,42 @@
 		</div>
 	</div>
 </header>
-    <nav>  
-  
-    <a href="/" >Home</a>
-  
-    <a href="/about.html" class="current">About</a>
-  
+    <nav class="navbar">
+	<div class="flex-container">  
+		<a href="#home">Home</a>
+		<div class="nav-dropdown">
+			<button class="nav-dropbtn">About Us
+				<i class="fa fa-angle-down"></i>
+			</button>
+			<div class="nav-dropdown-content">
+				<a href="#">Link 1</a>
+				<a href="#">Link 2</a>
+			</div>
+		</div>
+		<div class="nav-dropdown">
+			<button class="nav-dropbtn">BGSA Events
+				<i class="fa fa-angle-down"> </i>
+			</button>
+			<div class="nav-dropdown-content">
+				<a href="#">Link 1</a>
+				<a href="#">Link 2</a>
+			</div>
+		</div>
+		<a href="#CAMPUS">Campus Resources</a>
+		<a href="#CALENDAR">Departmental Calendar</a>
+		<a href="#GRADHELP">Graduation Help</a>
+	</div>
 </nav>
+    <div id="sideNav" class="postCategoryContainer">
+	<div class="postCategoryHeading flex-container">
+		<p>POST CATEGORIES</p>
+	</div>
+	
+	<div class="postCategory">
+		[#<Jekyll::Document _posts/2018-08-20-bananas.md collection=posts>]
+	</div>
+	
+</div>
     <h1 id="about-page">About page</h1>
 
 <p>This page tells you a little bit about me.</p>

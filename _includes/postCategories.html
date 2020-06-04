@@ -1,0 +1,10 @@
+<div id="sideNav" class="postCategoryContainer">
+	<div class="postCategoryHeading flex-container">
+		<p>POST CATEGORIES</p>
+	</div>
+	{% for postCategory in site.collections %}
+	<div class="postCategory">
+		{{ postCategory }}
+	</div>
+	{% endfor %}
+</div>
