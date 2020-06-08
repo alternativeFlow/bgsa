@@ -9,6 +9,7 @@ html, body {
 body {
 	margin: 0;
 	height: 300vh;
+	font-family: 'Fira Sans';
 }
 
 
@@ -25,6 +26,14 @@ body {
 	width: auto;
 }
 
+//INDEX
+
+.bottomContainer {
+	display: grid;
+	grid-template-areas:
+		'. mainContent mainContent mainContent mainContent'
+}
+
 //HEADER
 
 .header-main {
@@ -32,7 +41,6 @@ body {
 	padding: 0;
 	margin:0;
 	margin-top: 35px;
-	font-family: initial;
 	font-size: 75px;
 	color: black;
 }
@@ -42,7 +50,6 @@ body {
 	padding: 0;
 	margin:0;
 	margin-top: 20px;
-	font-family: initial;
 	font-size: 15px;
 	color: black;
 }
@@ -59,7 +66,7 @@ body {
 }
 
 .navbar a {
-	width: 160px;
+	width: 180px;
 	float: left;
 	display: block;
 	text-align: center;
@@ -75,21 +82,20 @@ body {
 }
 
 .nav-dropdown .nav-dropbtn {
-	width: 160px;
+	width: 180px;
 	font-size: 17px;
 	border: none;
 	outline: none;
 	color: black;
 	padding: 14px 16px;
-	background-color: inherit;
-	font-family: inherit;
+	background-color: white;
 	margin: 0;
 }
 
 .nav-dropdown-content {
 	display: none;
 	position: absolute;
-	min-widht: 160px;
+	min-widht: 180px;
 	z-index: 1;
 }
 
@@ -104,7 +110,7 @@ body {
 	background-color: white;
 }
 
-.navbar a:hover, .nav-dropdown:hover .dropbtn {
+.navbar a:hover, .nav-dropbtn:hover {
 	color: #DEDDDD;
 }
 
@@ -119,12 +125,14 @@ body {
 .nav-dropdown-content:hover a {
 	color: black;
 }
+
 // POST CATEGORIES
 
 .postCategoryContainer {
-	margin-top: 40px;
-	margin-left:30px;
 	display: block;
+	margin-top: 40px;
+	margin-left: 30px;
+	max-width: 250px;
 }
 
 .postCategoryHeading {
@@ -138,8 +146,13 @@ body {
 	padding-bottom: 10px;
 	padding-left: 0;
 	width: 250px;
-	height: 50px;
-	border-bottom: 1px solid gray;
+	height: 25px;
+	border-bottom: 3px solid gray;
+}
+
+.postCategory a {
+	color: black;
+	text-decoration: none;
 }
 
 .sticky {
@@ -148,11 +161,17 @@ body {
 	width: 100%;
 }
 
-.sticky + .content {
-	padding-top: 60px;
+// MAIN CONTENT
+
+.contentContainer {
+	display: grid;
+	grid-area: mainContent;
+	margin-left: 30px;
 }
 
-
+.whenSticky {
+	margin-left: 310px;
+} 
 
 
 
