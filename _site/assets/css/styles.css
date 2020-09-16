@@ -48,6 +48,6 @@ body { margin: 0; height: 300vh; font-family: 'Fira Sans'; }
 
 .sticky { top: 0; left: 0; }
 
-.carouselCustom { margin-top: 40px; height: 400px; width: 600px; overflow: hidden; }
+.carouselCustom { margin-top: 40px; margin-bottom: 40px; height: 400px; width: 600px; overflow: hidden; }
 
 /*# sourceMappingURL=styles.css.map */
