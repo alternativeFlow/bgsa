@@ -1,11 +1,10 @@
-<div id="sideNav" class="postCategoryContainer">
-	<div class="postCategoryHeading flex-container">
+<nav id="sideNav" class="postCategoryContainer col-3">
+	<div class="postCategoryHeading">
 		<p>POST CATEGORIES</p>
 	</div>
-	<div class="postCategory">
-		<a href="#Category">Meeting Minutes</a>
-	</div>
-	<div class="postCategory">
-		<a href="#Category">Seminars</a>
-	</div>
-</div>
+	{% for cat in site.categories %}
+		<div class="postCategory">
+			<a href="#Category">{{ cat | first }}</a>
+		</div>
+	{% endfor %}
+</nav>

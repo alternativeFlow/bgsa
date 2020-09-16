@@ -22,10 +22,6 @@ body {
 	justify-content: center;
 }
 
-.row {
-	width: auto;
-}
-
 //INDEX
 
 .bottomContainer {
@@ -40,8 +36,12 @@ body {
 	text-decoration: none;
 	padding: 0;
 	margin:0;
-	margin-top: 35px;
 	font-size: 75px;
+	color: black;
+}
+
+.header-main:hover {
+	text-decoration: none;
 	color: black;
 }
 
@@ -49,24 +49,22 @@ body {
 	text-align: center;
 	padding: 0;
 	margin:0;
-	margin-top: 20px;
 	font-size: 15px;
 	color: black;
 }
 
 // NAVBAR
 
-.navbar {
+.navbarCustom {
 	padding:0;
 	margin:0;
-	margin-top: 50px;
-	min-width: 100%;
-	min-height: 50px;
-	border: 1px solid black;
+	margin-top: 30px;
+	border-bottom: 1px solid black;
+	border-top: 1px solid black;
 }
 
-.navbar a {
-	width: 180px;
+.navbarCustom a {
+	width: 200px;
 	float: left;
 	display: block;
 	text-align: center;
@@ -76,14 +74,19 @@ body {
 	color: black;
 }
 
-.nav-dropdown {
+.navbarCustom a:hover {
+	text-decoration: none;
+}
+
+.navCustom-dropdown {
 	float: left;
 	overflow: hidden;
 }
 
-.nav-dropdown .nav-dropbtn {
-	width: 180px;
+.navCustom-dropdown .navCustom-dropbtn {
+	width: 200px;
 	font-size: 17px;
+	text-align: center;
 	border: none;
 	outline: none;
 	color: black;
@@ -92,14 +95,14 @@ body {
 	margin: 0;
 }
 
-.nav-dropdown-content {
+.navCustom-dropdown-content {
 	display: none;
 	position: absolute;
-	min-widht: 180px;
+	min-width: 180px;
 	z-index: 1;
 }
 
-.nav-dropdown-content a {
+.navCustom-dropdown-content a {
 	float: none;
 	color: black;
 	padding: 12px 16px;
@@ -110,29 +113,29 @@ body {
 	background-color: white;
 }
 
-.navbar a:hover, .nav-dropbtn:hover {
+.navbarCustom a:hover, .navCustom-dropbtn:hover {
 	color: #DEDDDD;
 }
 
-.nav-dropdown:hover .nav-dropdown-content {
+.navCustom-dropdown:hover .navCustom-dropdown-content {
   	display: block;
 }
 
-.nav-dropdown-content:hover a:hover {
+.navCustom-dropdown-content:hover a:hover {
 	background-color: #DAF2FA;
 }
 
-.nav-dropdown-content:hover a {
+.navCustom-dropdown-content:hover a {
 	color: black;
 }
 
 // POST CATEGORIES
 
+
 .postCategoryContainer {
-	display: block;
+	text-align:center;
 	margin-top: 40px;
 	margin-left: 30px;
-	max-width: 250px;
 }
 
 .postCategoryHeading {
@@ -146,7 +149,7 @@ body {
 	padding-bottom: 10px;
 	padding-left: 0;
 	width: 250px;
-	height: 25px;
+	height: 50px;
 	border-bottom: 3px solid gray;
 }
 
@@ -155,25 +158,26 @@ body {
 	text-decoration: none;
 }
 
+.postCategory a:hover {
+	color: black;
+	text-decoration: none;
+}
+
 .sticky {
-	position: fixed;
 	top: 0;
-	width: 100%;
+	left: 0;
 }
 
 // MAIN CONTENT
 
-.contentContainer {
-	display: grid;
-	grid-area: mainContent;
-	margin-left: 30px;
+//Carousel
+
+.carouselCustom {
+	margin-top: 40px;
+	height: 400px;
+	width: 600px;
+	overflow: hidden;
 }
-
-.whenSticky {
-	margin-left: 310px;
-} 
-
-
 
 
 
